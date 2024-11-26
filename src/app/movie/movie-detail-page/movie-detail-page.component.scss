@@ -1,0 +1,131 @@
+@use "../../ui/token/mixins/flex" as flex;
+@use "../../ui/component/aspect-ratio/aspect-ratio";
+
+:host {
+  width: 100%;
+  display: block;
+}
+
+.favourite-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 30px;
+}
+
+.loader {
+  position: absolute;
+  z-index: 200;
+  top: 250px;
+}
+
+.movie-detail-wrapper {
+  min-height: 500px;
+}
+
+.movie-detail {
+
+  @media only screen and (max-width: 1500px) {
+    &--grid-item {
+      padding: 3rem;
+    }
+  }
+
+  &--genres {
+    @include flex.d-flex-v;
+    flex-wrap: wrap;
+
+    &-link {
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+
+      @include flex.d-flex-v;
+      padding: 0.5rem 0;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+
+  &--ad-section-links {
+    .section--content {
+      @include flex.d-flex;
+      margin-right: auto;
+    }
+
+    .btn {
+      margin-right: 2rem;
+      @media only screen and (max-width: 1300px) {
+        margin-right: 1rem;
+      }
+    }
+
+    > .btn:last-child {
+      margin-right: 0rem;
+      float: right;
+    }
+  }
+
+  &--basic-infos {
+    @include flex.d-flex-v;
+    justify-content: space-between;
+  }
+
+  &--cast-list {
+    @include flex.d-flex;
+    flex-direction: row;
+    margin: 0 20px;
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+  }
+}
+
+.cast-list {
+  width: 100%;
+  display: flex;
+  overflow-x: scroll;
+  position: relative;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+
+.cast-list--btn {
+  background: transparent;
+  border: 0;
+  z-index: 2;
+  font-size: 40px;
+  text-decoration: none;
+  cursor: pointer;
+  color: rgb(102, 102, 102);
+}
+
+.movie-detail--languages-runtime-release {
+  color: var(--palette-warning-main);
+  text-transform: uppercase;
+}
+
+.synopsis {
+  font-style: italic;
+}
+
+.movie-detail--section {
+  margin-bottom: 3rem;
+}
+
+.movie-detail--cast-actor {
+  display: block;
+  height: auto;
+  width: 70px;
+  flex-shrink: 0;
+
+  img {
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: var(--theme-borderRadius-circle);
+    object-fit: cover;
+    margin: 0 auto;
+  }
+}

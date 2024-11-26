@@ -1,0 +1,10 @@
+@use "../../token/mixins/flex" as flex;
+:host {
+  margin: 8px 0;
+  @include flex.d-flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+:host > :global(label + *) {
+  margin-top: 4px;
+}
