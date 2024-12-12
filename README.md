@@ -27,8 +27,8 @@ npm run start
 
 ## Workshop Information
 
-* [ws info doc](https://docs.google.com/document/d/1jtmSJ-L2VkUKo-dWM3WFY0ZcDr6UulwfJnOhKFMhvFg/edit?usp=drive_link)
-* [slides](https://drive.google.com/drive/folders/1tBBAEc6SxrX292tJoE62N7rvvr1ZKJFE?usp=sharing)
+* [ws info doc](https://docs.google.com/document/d/1v1FV9fvuFrvXzMviWfS2hR1vvTOtnPvWuZWM3TXCJPY/edit?usp=drive_link)
+* [slides](https://drive.google.com/drive/folders/1NmWQJaJd4txpjWr1C8VBUf-pk6rRznAv?usp=sharing)
 
 ## Exercises
 
