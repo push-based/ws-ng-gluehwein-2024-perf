@@ -10,9 +10,9 @@
 **Clone and install**
 
 ```bash
-git clone https://github.com/push-based/ws-ng-be-2024-perf.git
+git clone https://github.com/push-based/ws-ng-gluehwein-2024-perf.git
 
-cd ws-ng-be-2024-perf
+cd ws-ng-gluehwein-2024-perf
 npm install
 
 # (optional) if the step before didn't work, please try the following
