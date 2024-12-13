@@ -13,7 +13,9 @@
 git clone https://github.com/push-based/ws-ng-gluehwein-2024-perf.git
 
 cd ws-ng-gluehwein-2024-perf
-npm install
+npm install 
+# or if you're using yarn
+yarn install
 
 # (optional) if the step before didn't work, please try the following
 npm install --force
